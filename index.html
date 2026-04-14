@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Pricing Logic</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <form>
+        <h1>Shipping Rules Engine</h1>
+        <label for="weight">Shipping weight</label>
+        <input id="weight" type="number" placeholder="kg">
+
+        <label for="isInternational">Is international destination?</label>
+        <select name="isInternational" id="isInternational">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+         <label for="isUrgent">Is Urgent?</label>
+        <select name="isUrgent" id="isUrgent">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+
+
+        <button type="button" onclick="shippingCost()">Calculate</button>
+
+        <p id="shippingCost"></p>
+    </form>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
